@@ -1,7 +1,7 @@
 import React from "react";
 import "./Related.css";
 import { FaRegHeart } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import { IoEyeOutline } from "react-icons/io5";
 
 function Related({ product, setBigImg }) {

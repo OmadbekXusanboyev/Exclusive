@@ -15,7 +15,7 @@ function Delivery() {
               data-aos-anchor-placement="center-bottom"
               className="delive-img"
             >
-              <img src="/public/images/icon-delivery.svg" alt="" />
+              <img src="./images/icon-delivery.svg" alt="" />
             </div>
             <h2>FREE AND FAST DELIVERY</h2>
             <p>Free delivery for all orders over $140</p>
