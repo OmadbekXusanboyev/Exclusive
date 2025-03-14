@@ -38,7 +38,7 @@ function Product({ product, addCart, addHeart }) {
             {oldPrice && <p className="oldProduct">${oldPrice}</p>}
           </div>
           <div className="star">
-            <img src="/images/Five star.svg" alt="" />
+            <img src="./images/Five star.svg" alt="" />
             (88)
           </div>
         </div>

@@ -27,7 +27,7 @@ function Delivery() {
               data-aos-anchor-placement="center-bottom"
               className="headset-img"
             >
-              <img src="/public/images/Icon-Customer.svg" alt="" />
+              <img src="./images/Icon-Customer.svg" alt="" />
             </div>
             <h2>24/7 CUSTOMER SERVICE</h2>
             <p>Friendly 24/7 customer support</p>
@@ -39,7 +39,7 @@ function Delivery() {
               data-aos-anchor-placement="center-bottom"
               className="secure-img"
             >
-              <img src="/public/images/Icon-secure.svg" alt="" />
+              <img src="./images/Icon-secure.svg" alt="" />
             </div>
             <h2>MONEY BACK GUARANTEE</h2>
             <p>We reurn money within 30 days</p>

@@ -32,7 +32,7 @@ const Explore = ({ item, addCart, addHeart }) => {
           <h4>{item.title}</h4>
           <div className="card-star">
             <p className="price">${item.price?.new ? item.price?.new : ""}</p>
-            <img src="/public/images/Three Star.svg" alt="" />
+            <img src="./images/Three Star.svg" alt="" />
             (35)
           </div>
           <div className="colors">
