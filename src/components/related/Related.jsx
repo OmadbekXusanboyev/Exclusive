@@ -4,14 +4,14 @@ import { FaRegHeart } from "react-icons/fa";
 import {  NavLink } from "react-router-dom";
 import { IoEyeOutline } from "react-icons/io5";
 
-function Related({ product, setBigImg }) {
-  const { new: newPrice, old: oldPrice } = product.price;
+function Related({ products, setBigImg }) {
+  const { new: newPrice, old: oldPrice } = products.price;
   return (
     <div>
       <div className="related-cards">
         <div className="card">
           <div className="card-img">
-            {product.sale && <span className="sale">-{product.sale}%</span>}
+            {products.sale && <span className="sale">-{products.sale}%</span>}
             <span className="card-heart">
               <FaRegHeart />
             </span>
@@ -19,15 +19,15 @@ function Related({ product, setBigImg }) {
               <IoEyeOutline />
             </span>
 
-            <NavLink to={`/oneproduct/${product.id}`}>
-              <img src={product.image} alt="" onClick={()=>{
-                setBigImg(product.image)
+            <NavLink to={`/oneproduct/${products.id}`}>
+              <img src={products.image} alt="" onClick={()=>{
+                setBigImg(products.image)
               }}/>
             </NavLink>
             <button className="card-btn">Add To Cart</button>
           </div>
           <div className="card-info">
-            <h4>{product.title}</h4>
+            <h4>{products.title}</h4>
             <div className="price">
               <p className="new">${newPrice}</p>
               {oldPrice && <p className="old">${oldPrice}</p>}

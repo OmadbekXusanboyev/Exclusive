@@ -9,7 +9,7 @@ const OneProduct = ({ products, related }) => {
   const { id } = useParams();
 
   const product = products.find((item) => item.id === parseInt(id));
-  const [bigImg, setBigImg] = useState(product?.imgs[0]);
+  const [bigImg, setBigImg] = useState(product?.imgs?.[0]);
   const [count, setCount] = useState(1);
   const [isRed, setIsRed] = useState(false);
   const [selectedSize, setSelectedSize] = useState("");
@@ -156,8 +156,8 @@ const OneProduct = ({ products, related }) => {
                 <h5>Related Item</h5>
               </div>
               <div className="cards">
-                {related.map((product) => (
-                  <Related key={product.id} product={product} bigImg={bigImg} setBigImg={setBigImg}/>
+                {related.map((products) => (
+                  <Related key={products.id} products={products} bigImg={bigImg} setBigImg={setBigImg}/>
                 ))}
               </div>
             </div>
